@@ -1,144 +1,64 @@
-
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>نواة - دعم المشاريع</title>
+  <title>نواة | دعم المشاريع</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
+      direction: rtl;
       font-family: 'Arial', sans-serif;
+      background: linear-gradient(to bottom, #e8f5e9, #ffffff);
       margin: 0;
       padding: 0;
-      background: #f4f4f4;
-      color: #333;
+      text-align: center;
+      color: #2e7d32;
     }
     header {
-      background-color: #2d6a4f;
+      padding: 40px 20px;
+    }
+    h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 20px;
+      max-width: 600px;
+      margin: 0 auto 30px;
+    }
+    .cta-button {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #2e7d32;
       color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      background: #40916c;
-      padding: 10px;
-    }
-    nav a {
-      color: white;
+      font-size: 18px;
       text-decoration: none;
-      margin: 0 15px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
     }
-    .hero {
-      text-align: center;
-      padding: 50px 20px;
-      background: #95d5b2;
-    }
-    .hero h2 {
-      margin-bottom: 20px;
-    }
-    .hero button {
-      padding: 10px 20px;
-      background: #1b4332;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    .section {
-      padding: 30px 20px;
-      background: white;
-      margin: 20px;
-      border-radius: 10px;
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-    input, textarea, select {
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    input[type="submit"] {
-      background: #2d6a4f;
-      color: white;
-      border: none;
-      cursor: pointer;
+    .cta-button:hover {
+      background-color: #1b5e20;
     }
     footer {
-      background: #2d6a4f;
-      color: white;
-      text-align: center;
-      padding: 15px;
+      margin-top: 50px;
+      padding: 20px;
+      font-size: 14px;
+      background-color: #f1f8e9;
+      color: #666;
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>نواة</h1>
-    <p>حاضنة لدعم المشاريع الصغيرة والكبيرة</p>
+    <p>نحن ندعم أفكارك ونحوّلها إلى مشاريع ناجحة من خلال تمويل، تخطيط، وأيدي عاملة مؤهلة.</p>
+    <a href="contact.html" class="cta-button">اتصل بنا</a>
   </header>
 
-  <nav>
-    <a href="#about">من نحن</a>
-    <a href="#services">الخدمات</a>
-    <a href="#contact">تواصل معنا</a>
-  </nav>
-
-  <div class="hero">
-    <h2>ابدأ مشروعك الآن بدعم نواة</h2>
-    <p>نوفر لك التمويل، التخطيط، والأيدي العاملة لتحقيق نجاحك.</p>
-    <button onclick="location.href='#apply'">قدّم مشروعك الآن</button>
-  </div>
-
-  <div class="section" id="about">
-    <h3>من نحن</h3>
-    <p>"نواة" هي مبادرة تهدف إلى دعم أصحاب المشاريع في العالم العربي بتوفير الدعم المالي، التخطيطي، والموارد البشرية مقابل نسبة شراكة بسيطة.</p>
-  </div>
-
-  <div class="section" id="services">
-    <h3>خدماتنا</h3>
-    <ul>
-      <li>تقديم خطة عمل احترافية</li>
-      <li>تمويل مادي للمشاريع الواعدة</li>
-      <li>توفير الأيدي العاملة حسب الحاجة</li>
-      <li>مرافقة واستشارات على المدى الطويل</li>
-    </ul>
-  </div>
-
-  <div class="section" id="apply">
-    <h3>قدّم مشروعك</h3>
-    <form action="https://formsubmit.co/Yagoubismailyagoub@gmail.com" method="POST" enctype="multipart/form-data">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="text" name="name" placeholder="اسمك الكامل" required>
-      <input type="text" name="project_name" placeholder="اسم المشروع" required>
-      <textarea name="description" placeholder="وصف مختصر للمشروع" rows="4" required></textarea>
-      <input type="number" name="budget" placeholder="رأس المال المطلوب (بالدولار)" required>
-      <select name="support_type" required>
-        <option value="">نوع الدعم المطلوب</option>
-        <option value="funding">تمويل</option>
-        <option value="planning">خطة عمل</option>
-        <option value="workforce">أيدي عاملة</option>
-        <option value="all">الكل</option>
-      </select>
-      <input type="file" name="attachment">
-      <input type="submit" value="إرسال الطلب">
-    </form>
-  </div>
-
-  <div class="section" id="contact">
-    <h3>تواصل معنا</h3>
-    <p>راسلنا عبر البريد الإلكتروني: support@nawa.com</p>
-  </div>
-
   <footer>
-    <p>جميع الحقوق محفوظة &copy; نواة 2025</p>
+    © 2025 نواة. جميع الحقوق محفوظة.
   </footer>
+
 </body>
 </html>
