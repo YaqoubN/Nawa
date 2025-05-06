@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>نواة | Nawa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            direction: rtl;
+            background-color: #f8f8f8;
+            color: #333;
+            margin: 0;
+        }
+        header {
+            background-color: #006400;
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            background: #004d00;
+            overflow: hidden;
+            margin: 0;
+        }
+        nav ul li {
+            float: right;
+        }
+        nav ul li a {
+            display: block;
+            padding: 14px 20px;
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover {
+            background: #003300;
+        }
+        .content {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        footer {
+            background: #006400;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>نواة لدعم المشاريع</h1>
+    <p>خطوتك الأولى نحو تحقيق مشروعك</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="contact.html">اتصل بنا</a></li>
+        <li><a href="team.html">فريق العمل</a></li>
+        <li><a href="about.html">عن نواة</a></li>
+        <li><a href="index.html">الرئيسية</a></li>
+    </ul>
+</nav>
+
+<div class="content">
+    <h2>مرحبًا بك في نواة</h2>
+    <p>نحن هنا لمساعدتك في تحويل فكرتك إلى مشروع ناجح. نواة تقدم لك خطة، تمويل، دعم، ويد عاملة مقابل نسبة صغيرة من الأرباح.</p>
+</div>
+
+<footer>
+    <p>جميع الحقوق محفوظة &copy; نواة 2025</p>
+</footer>
+
+</body>
+</html>
